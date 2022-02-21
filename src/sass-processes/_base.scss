@@ -3,3 +3,185 @@
 ::after {
   box-sizing: border-box;
 }
+
+.navMenu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  width: 600px;
+  color: $GrayishBlue;
+
+  & li {
+    padding: 4px;
+    cursor: pointer;
+
+    // &:hover {
+    //   font-weight: 700;
+    //   transition: all 0.3s ease-in;
+    // }
+  }
+}
+
+.leftNavIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+}
+
+.rightNavIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10%;
+  margin-left: 16px;
+
+  & > * {
+    cursor: pointer;
+  }
+}
+
+.topLayout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid $LightGrayishBlue;
+  //padding-bottom: 16px;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.pageArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 90vh;
+  width: 100%;
+}
+
+.leftPageArea {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: end;
+  margin-right: 64px;
+  width: 50%;
+}
+
+.productImage {
+  margin-bottom: 20px;
+
+  & img {
+    border-radius: 16px;
+  }
+}
+
+.thumbnailImage {
+  display: flex;
+  justify-content: space-between;
+}
+
+.thumbnail {
+  margin-right: 16px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  & img {
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:focus {
+      outline: 4px solid black;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.rightPageArea {
+  width: 50%;
+  margin: 32px 64px;
+
+  & h4 {
+    color: $Orange;
+  }
+
+  & h1 {
+    width: 70%;
+  }
+  & p:nth-child(1) {
+    font-size: 16px;
+    width: 70%;
+  }
+}
+
+.productPrice {
+  width: 30%;
+
+  & .originalPrice {
+    text-decoration: line-through;
+    color: lighten($DarkGrayishBlue, 10);
+    opacity: 0.5;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.newPriceCalc {
+  display: flex;
+  justify-content: start;
+  width: 50%;
+  line-height: 0.5px;
+  position: relative;
+
+  & .newPrice b {
+    //margin-right: 32px;
+    font-size: 2rem;
+  }
+
+  & .discount {
+    background: $PaleOrange;
+    color: $Orange;
+    font-weight: 700;
+    //width: 50%;
+    padding: 10px 6px;
+    border-radius: 4px;
+    position: absolute;
+    top: -5px;
+    left: 140px;
+  }
+}
+
+.addToCart {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  & :nth-child(3) {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  & button {
+    @extend %btn;
+    background-color: lighten($GrayishBlue, 20);
+  }
+
+  & :nth-child(1) {
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+
+  & p {
+    padding: 7.8px 12px 8.8px 12px;
+    margin: 0;
+    font-weight: 700;
+    background: lighten($GrayishBlue, 20);
+  }
+}

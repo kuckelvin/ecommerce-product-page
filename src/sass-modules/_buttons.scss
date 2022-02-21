@@ -1,0 +1,16 @@
+%btn {
+  display: inline-block;
+  padding: 11px 12px;
+  margin: 32px 0;
+
+  cursor: pointer;
+  color: $Orange;
+  outline: none;
+  border: none;
+  width: 40px;
+
+  :hover {
+    outline: none;
+    transform: scale(0.98);
+  }
+}

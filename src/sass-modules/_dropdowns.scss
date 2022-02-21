@@ -1,0 +1,32 @@
+.dropdown {
+  display: inline-block;
+  position: relative;
+
+  &:hover .contentBar {
+    display: block;
+  }
+
+  &:hover .dropdownTarget {
+    font-weight: 700;
+    transition: all 0.2s ease-in;
+  }
+}
+
+.dropdownContent {
+  display: block;
+
+  & .contentBar {
+    background-color: $Orange;
+    //width: inherit;
+    height: 4px;
+    //margin-bottom: 32px;
+    //background-color: $Orange;
+    //box-shadow: 2px, 4px, 12px, rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    top: 42px;
+    left: 0;
+  }
+}
