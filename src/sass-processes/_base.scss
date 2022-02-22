@@ -47,8 +47,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid $LightGrayishBlue;
-  //padding-bottom: 16px;
+  border-bottom: 2px solid lighten($GrayishBlue, 20);
+  padding-bottom: 16px;
   margin-bottom: 32px;
   width: 100%;
 }

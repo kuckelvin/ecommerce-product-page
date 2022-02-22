@@ -68,7 +68,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 2px solid #f7f8fd;
+  border-bottom: 2px solid #f0f2f4;
+  padding-bottom: 16px;
   margin-bottom: 32px;
   width: 100%;
 }
@@ -295,7 +296,37 @@ code {
   z-index: 1;
   width: 100%;
   position: absolute;
-  top: 42px;
+  top: 58px;
   left: 0;
+}
+
+.rightNavDropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.rightNavDropdown:hover .rightNavDropdownContent {
+  display: block;
+}
+
+.rightNavDropdownContent {
+  background-color: #f4f4f4;
+  -webkit-box-shadow: 2px, 4px, 12px, rgba(0, 0, 0, 0.2);
+          box-shadow: 2px, 4px, 12px, rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 1;
+  min-width: 300px;
+  position: absolute;
+  top: 45px;
+  left: -140px;
+  min-height: 200px;
+  border-radius: 12px;
+}
+
+.rightNavDropdownContent .rightNavDropdownBar {
+  background-color: #b6bcc8;
+  width: inherit;
+  height: 2px;
+  margin-bottom: 24px;
 }
 /*# sourceMappingURL=index.css.map */

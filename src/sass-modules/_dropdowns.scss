@@ -1,3 +1,4 @@
+//Nav dropdowns (Left side)
 .dropdown {
   display: inline-block;
   position: relative;
@@ -26,7 +27,38 @@
     z-index: 1;
     width: 100%;
     position: absolute;
-    top: 42px;
+    top: 58px;
     left: 0;
+  }
+}
+
+//Right Nav Icon Dropdown
+
+.rightNavDropdown {
+  display: inline-block;
+  position: relative;
+
+  &:hover .rightNavDropdownContent {
+    display: block;
+  }
+}
+
+.rightNavDropdownContent {
+  background-color: #f4f4f4;
+  box-shadow: 2px, 4px, 12px, rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 1;
+  min-width: 300px;
+  position: absolute;
+  top: 45px;
+  left: -140px;
+  min-height: 200px;
+  border-radius: 12px;
+
+  & .rightNavDropdownBar {
+    background-color: $GrayishBlue;
+    width: inherit;
+    height: 2px;
+    margin-bottom: 24px;
   }
 }
