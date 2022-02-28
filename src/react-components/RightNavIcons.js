@@ -1,6 +1,12 @@
 import imageAvatar from "../images/image-avatar.png";
+import { useContext } from "react"
+import ProductContext from "../react-context/ProductContext"
+import Cart from "./Cart"
 
 const RightNavIcons = () => {
+  const {productNumber, showCartIcon} = useContext(ProductContext)
+
+
   return (
     <div className="rightNavIcons">
       <div className="rightNavDropdown">
@@ -12,10 +18,15 @@ const RightNavIcons = () => {
               fill-rule="nonzero"
             />
           </svg>
+          <div className={`cartProductNumber ${showCartIcon ? "show" : ""}`}>
+            <div className="productNumberCount">{productNumber}</div>
+          </div>
           <div className="rightNavDropdownContent">
             <h4 style={{margin: "16px"}}><b>Cart</b></h4>
             <div className="rightNavDropdownBar"></div>
-            <p style={{textAlign: "center", fontWeight: "700"}}>Your cart is empty.</p>
+            <div className="cartContent">
+                {(showCartIcon !== true) ? <p style={{fontWeight: "700"}}>Your cart is empty.</p> : <Cart />}
+            </div>
           </div>
         </div>
       </div>
