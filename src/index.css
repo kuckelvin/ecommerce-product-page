@@ -54,6 +54,10 @@
   margin-left: 16px;
 }
 
+.rightNavIcons img:last-child {
+  cursor: pointer;
+}
+
 .topLayout {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,6 +112,8 @@
 
 .productImage img {
   border-radius: 16px;
+  width: 100%;
+  height: auto;
 }
 
 .thumbnailImage {
@@ -127,13 +133,16 @@
   margin-right: 0;
 }
 
+.thumbnail .bordered {
+  outline: 4px solid black;
+  border-radius: 8px;
+}
+
 .thumbnail img {
   border-radius: 8px;
   cursor: pointer;
-}
-
-.thumbnail img:focus {
-  outline: 4px solid black;
+  width: 100%;
+  height: auto;
 }
 
 .thumbnail img:hover {

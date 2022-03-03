@@ -16,13 +16,17 @@ export const ProductProvider = ({ children }) => {
       cartPopulated()
     }
   }
+  
+  function removeZeroCart() {
+    (productNumber === 1 && setShowCartIcon(false))
+  }
 
   function cartPopulated() {
     if (cartAdded === true) {
       setConsiderCart(productNumber+1)
     }
-    showCartIcon(false)
     setCartAdded(false)
+   
   }
 
   function add2Cart () {
@@ -55,7 +59,7 @@ export const ProductProvider = ({ children }) => {
   
 
   return (
-    <ProductContext.Provider value={{productNumber, changeProductNumber, showCartIcon, handleProductNumber, productPrice, setProductPrice, newPrice, setNewPrice, onDelete, add2Cart, cartPopulated, considerCart}}>
+    <ProductContext.Provider value={{productNumber, changeProductNumber, showCartIcon, handleProductNumber, productPrice, setProductPrice, newPrice, setNewPrice, onDelete, add2Cart, cartPopulated, considerCart, removeZeroCart}}>
       {children}
     </ProductContext.Provider>
   )

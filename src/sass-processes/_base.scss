@@ -38,9 +38,9 @@
   width: 10%;
   margin-left: 16px;
 
-  // & > * {
-  //   cursor: pointer;
-  // }
+  & img:last-child {
+    cursor: pointer;
+  }
 }
 
 .topLayout {
@@ -75,6 +75,8 @@
 
   & img {
     border-radius: 16px;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -90,13 +92,16 @@
     margin-right: 0;
   }
 
+  & .bordered {
+    outline: 4px solid black;
+    border-radius: 8px;
+  }
+
   & img {
     border-radius: 8px;
     cursor: pointer;
-
-    &:focus {
-      outline: 4px solid black;
-    }
+    width: 100%;
+    height: auto;
 
     &:hover {
       opacity: 0.5;

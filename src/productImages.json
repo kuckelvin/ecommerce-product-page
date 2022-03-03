@@ -1,28 +1,26 @@
-{
-  "productImages" : [
-    { 
-      "thumbnailSource": "../images/image-product-1-thumbnail.jpg",
-      "thumbnailAltText": "product 1 thumbnail",
-      "imageSource": "../images/image-product-1.jpg",
-      "ImageAltText": "product 1 image"
-    },
-    { 
-      "thumbnailSource": "../images/image-product-2-thumbnail.jpg",
-      "thumbnailAltText": "product 2 thumbnail",
-      "imageSource": "../images/image-product-2.jpg",
-      "ImageAltText": "product 2 image"
-    },
-    { 
-      "thumbnailSource": "../images/image-product-3-thumbnail.jpg",
-      "thumbnailAltText": "product 3 thumbnail",
-      "imageSource": "../images/image-product-3.jpg",
-      "ImageAltText": "product 3 image"
-    },
-    { 
-      "thumbnailSource": "../images/image-product-4-thumbnail.jpg",
-      "thumbnailAltText": "product 4 thumbnail",
-      "imageSource": "../images/image-product-4.jpg",
-      "ImageAltText": "product 4 image"
-    }
-  ]
-}
+[
+  {
+    "thumbnailSource": "/images/image-product-1-thumbnail.jpg",
+    "thumbnailAltText": "product 1 thumbnail",
+    "imageSource": "/images/image-product-1.jpg",
+    "imageAltText": "product 1 image"
+  },
+  {
+    "thumbnailSource": "/images/image-product-2-thumbnail.jpg",
+    "thumbnailAltText": "product 2 thumbnail",
+    "imageSource": "/images/image-product-2.jpg",
+    "imageAltText": "product 2 image"
+  },
+  {
+    "thumbnailSource": "/images/image-product-3-thumbnail.jpg",
+    "thumbnailAltText": "product 3 thumbnail",
+    "imageSource": "/images/image-product-3.jpg",
+    "imageAltText": "product 3 image"
+  },
+  {
+    "thumbnailSource": "/images/image-product-4-thumbnail.jpg",
+    "thumbnailAltText": "product 4 thumbnail",
+    "imageSource": "/images/image-product-4.jpg",
+    "imageAltText": "product 4 image"
+  }
+]
