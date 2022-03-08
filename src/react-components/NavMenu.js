@@ -44,14 +44,3 @@ const NavMenu = () => {
 }
 
 export default NavMenu
-
-/*
-<div class="dropdown">
-                                <li><a href="#" class="dropdowntarget">HOME</a></li>
-                                <div class="dropdown-content">
-                                    <div class="bar"></div>
-                                    <a href="#">HOME STYLE 1</a>
-                                    <a href="#">HOME STYLE 2</a>
-                                </div>
-                            </div>
-*/

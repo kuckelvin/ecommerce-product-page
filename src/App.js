@@ -1,17 +1,14 @@
 import "./index.css"
-import TopLayout from "./react-components/TopLayout"
-import PageArea from "./react-components/PageArea"
 import {ProductProvider} from "./react-context/ProductContext"
+import MainPage from "./react-components/MainPage"
 
 function App() {
-
   return (
-    <ProductProvider>
-      <div className="container">
-        <TopLayout />
-        <PageArea />
-      </div>
-    </ProductProvider>
+    <>
+      <ProductProvider>
+        <MainPage />
+      </ProductProvider>
+    </>
   )
 }
 

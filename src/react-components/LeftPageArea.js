@@ -1,66 +1,40 @@
 import productImages from "../productImages.json"
 import ProductThumbnail from "./ProductThumbnail"
 import ProductImage from "./ProductImage"
-import { useState } from "react"
 import {motion, AnimatePresence} from "framer-motion"
+import { useContext } from "react"
+import ProductContext from "../react-context/ProductContext"
 
-const LeftPageArea = ({ onModalShow }) => {
-  const [activeImage, setActiveImage] = useState(productImages[0].imageSource)
-  const [activeAlt, setActiveAlt] = useState(productImages[0].imageAltText)
-  const [clicked, setClicked] = useState("")
-  const [active, setActive] = useState(true)
 
-  const onShow = (id) => {
-    setActiveImage(productImages[(parseFloat(id)-1)].imageSource)
-    setActiveAlt(productImages[(parseFloat(id)-1)].imageSource)
-    //id ? setActive("active") : setActive("")
-  }
+const LeftPageArea = () => {
+  const {activeImage, activeAlt, clicked, select, onShow, activeId} = useContext(ProductContext)
   
-  const select = (e) => {
-    clicked ? setClicked("") : setClicked("bordered")
-  }
-
 
   return (
     <section className="leftPageArea">
       <AnimatePresence>
-        <motion.div
-        initial={{opacity: 0}}
-        animate={{opacity: 1}}
-        >
-          {active ?
-            <ProductImage 
-              src={activeImage} 
-              alt={activeAlt}
-            />
-          : setActive(false)
-          }  
-          </motion.div>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+          <ProductImage id={activeId} src={activeImage} alt={activeAlt} />
+        </motion.div>
       </AnimatePresence>
       <div className="thumbnailImage">
-        {productImages.map((thumbnail, index) => {
+        {productImages.map((thumbnail) => {
           return (
-            <div
-              key={index}
-              className="thumbnail"
-            >
+            <div key={thumbnail.id} className="thumbnail">
               <ProductThumbnail
-                number={index + 1}
+                id={thumbnail.id}
                 src={thumbnail.thumbnailSource}
                 alt={thumbnail.thumbnailAltText}
                 onShow={onShow}
                 border={select}
                 clicked={clicked}
-                active={active}
-                onModalShow={onModalShow}
               />
             </div>
-          )
+          );
         })}
       </div>
-      
     </section>
-  )
+  );
 }
 
 export default LeftPageArea;

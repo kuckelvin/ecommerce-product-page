@@ -1,9 +1,9 @@
-const ProductImage = ({ src, alt }) => {
+const ProductImage = ({ id, src, alt }) => {
   return (
-    <div className="productImage" style={{ width: "450px", height: "450px" }}>
+    <div id={`productImage_${id}`} className="productImage" style={{ width: "450px", height: "450px" }}>
       <img 
         src={src}
-        alt={alt} 
+        alt={alt}
       />
     </div>
   )
