@@ -51,6 +51,10 @@
   padding-bottom: 8px;
   margin-bottom: 32px;
   width: 100%;
+
+  .mobileMenu {
+    display: none;
+  }
 }
 
 .pageArea {
@@ -72,6 +76,8 @@
 
 .productImage {
   margin-bottom: 20px;
+  width: 450px;
+  height: 450px;
 
   & img {
     border-radius: 16px;
@@ -115,6 +121,7 @@
 
   & h4 {
     color: $Orange;
+    letter-spacing: 2px;
   }
 
   & h1 {
@@ -168,6 +175,12 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
+  & .numberToCartOnly {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   & :nth-child(3) {
     border-bottom-right-radius: 8px;

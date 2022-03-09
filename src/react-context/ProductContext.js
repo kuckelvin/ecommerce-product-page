@@ -80,12 +80,9 @@ export const ProductProvider = ({ children }) => {
   const onShow = (id) => {
     setActiveImage(productImages[parseFloat(id) - 1].imageSource);
     let activeImageNumber = id
-    setActiveId(activeImageNumber)
+    setActiveId(activeImageNumber)  //ASYNCHRONOUS REACT!!!!!!!!!!!!!!!!!
     console.log("clicked id:", id)
     console.log("active id", activeId)
-  //   if (modalShow) {
-  //   onShowMod(id)
-  //   }
   }
 
 
@@ -119,10 +116,10 @@ export const ProductProvider = ({ children }) => {
       if (activeId === 5) {
         return
       } else if (activeId === 0) {
-        setActiveId (activeId + 2)
+        setActiveId (activeId => activeId + 2)
       } else {
         setActiveImage(productImages[parseFloat(activeId) - 1].imageSource)
-        setActiveId((activeId + 1))
+        setActiveId((activeId => activeId + 1))
       }
     }
 

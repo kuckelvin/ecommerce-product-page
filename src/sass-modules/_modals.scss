@@ -26,10 +26,6 @@
   width: 60vw;
   //border-radius: 4px;
   opacity: 0.95;
-
-  // .productImage {
-  //   position: relative;
-  // }
 }
 
 .modalClose {
@@ -60,6 +56,11 @@
   position: absolute;
   top: 230px;
   left: 0;
+  display: none;
+
+  &.modal {
+    display: block;
+  }
 }
 
 .next {
@@ -74,4 +75,9 @@
   position: absolute;
   top: 40%;
   right: 48%;
+  display: none;
+
+  &.modal {
+    display: block;
+  }
 }

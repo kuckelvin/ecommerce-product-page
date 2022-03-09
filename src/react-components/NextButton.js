@@ -1,13 +1,13 @@
-import RightArrow from "./Icons/LeftArrow"
+import RightArrow from "./Icons/RightArrow"
 import { useContext } from "react"
 import ProductContext from "../react-context/ProductContext"
 
-const NextButton = () => {
-  const {onShowModNext, activeId} = useContext(ProductContext)
+const NextButton = ({ strokeWidth, color, disabled }) => {
+  const {onShowModNext, activeId, modalShow} = useContext(ProductContext)
 
   return (
-    <button className="next" onClick={() => onShowModNext(activeId)} disabled={activeId === 5 && true}>
-      <RightArrow color="black" />
+    <button className={`next ${modalShow ? "modal" : "responsive"}`} onClick={() => onShowModNext(activeId)} disabled={activeId === 5 && true} strokeWidth={strokeWidth}>
+      <RightArrow color={disabled ? "grey" : color} strokeWidth={strokeWidth} />
     </button>
   )
 }
