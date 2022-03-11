@@ -1,7 +1,7 @@
 import product1Thumbnail from "../images/image-product-1-thumbnail.jpg"
-import product2Thumbnail from "../images/image-product-2-thumbnail.jpg"
-import product3Thumbnail from "../images/image-product-3-thumbnail.jpg"
-import product4Thumbnail from "../images/image-product-4-thumbnail.jpg"
+// import product2Thumbnail from "../images/image-product-2-thumbnail.jpg"
+// import product3Thumbnail from "../images/image-product-3-thumbnail.jpg"
+// import product4Thumbnail from "../images/image-product-4-thumbnail.jpg"
 import { useContext } from "react"
 import ProductContext from "../react-context/ProductContext"
 

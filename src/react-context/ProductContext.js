@@ -165,7 +165,9 @@ export const ProductProvider = ({ children }) => {
         activeId,
         showMobileNav,
         mobileNav,
-        setMobileNav
+        setMobileNav,
+        setActiveAlt,
+        setActive
       }}
     >
       {children}
