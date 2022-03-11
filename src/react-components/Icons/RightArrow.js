@@ -4,12 +4,12 @@ const RightArrow = ({ color, strokeWidth }) => {
       <path
         d="m2 1 8 8-8 8"
         stroke={color}
-        strokeWidth={strokeWidth}
+        stroke-width={strokeWidth}
         fill="none"
         fillRule="evenodd"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default RightArrow
+export default RightArrow;

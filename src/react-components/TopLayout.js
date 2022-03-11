@@ -1,7 +1,7 @@
 import Logo from "./Logo"
 import RightNavIcons from "./RightNavIcons"
 import NavMenu from "./NavMenu"
-import MobileMenu from "./MobileMenu"
+import MobileMenu from "./Icons/MobileMenu"
 
 const TopLayout = () => {
   return (

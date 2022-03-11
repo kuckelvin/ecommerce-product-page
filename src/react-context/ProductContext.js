@@ -17,6 +17,7 @@ export const ProductProvider = ({ children }) => {
   const [activeId, setActiveId] = useState(1);
   const [clicked, setClicked] = useState("");
   const [active, setActive] = useState(true);
+  const [mobileNav, setMobileNav] = useState(false)
   //const [activeImageNumber, setActiveImageNumber] = useState(1)
 
 
@@ -123,6 +124,11 @@ export const ProductProvider = ({ children }) => {
       }
     }
 
+    //Show mobile navigation (with mobile background)
+    function showMobileNav() {
+      setMobileNav(true)
+    }
+
   //toggle Active Thumbnail
   // function toggleActive () {
   //   if 
@@ -156,7 +162,10 @@ export const ProductProvider = ({ children }) => {
         clicked,
         onShowModPrev,
         onShowModNext,
-        activeId
+        activeId,
+        showMobileNav,
+        mobileNav,
+        setMobileNav
       }}
     >
       {children}

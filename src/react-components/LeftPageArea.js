@@ -18,14 +18,14 @@ const LeftPageArea = () => {
         modalShow ? (
           ""
           ) : (
-            <PreviousButton strokeWidth="5"/>
+            <PreviousButton strokeWidth="5" color="hsl(220, 13%, 13%)"/>
           )
       }
       {
         modalShow ? (
           ""
           ) : (
-            <NextButton strokeWidth="5" color="blue"/>
+            <NextButton strokeWidth="5" color="hsl(220, 13%, 13%)"/>
           )
       }
       <AnimatePresence>
