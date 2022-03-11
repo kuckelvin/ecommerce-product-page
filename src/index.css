@@ -375,6 +375,7 @@ code {
   .container {
     padding: 8px;
     margin: 12px 54px 0 0;
+    height: 100vh;
   }
   .topLayout {
     border-bottom: none;
@@ -970,7 +971,7 @@ code {
     display: block;
     width: 2rem;
     height: 2rem;
-    top: 180px;
+    top: 178px;
     right: 45px;
     z-index: 1;
   }
@@ -991,7 +992,7 @@ code {
             align-items: center;
     width: 290px;
     z-index: 505;
-    height: 100vh;
+    min-height: 110vh;
     background: white;
     position: relative;
     top: -34px;
@@ -1014,7 +1015,7 @@ code {
     font-size: 0.9rem;
   }
   .mobileNavMenu li:first-child {
-    padding-top: 72px;
+    margin-top: 12px;
   }
   .mobileNavMenu li:hover {
     color: #68707d;
@@ -1022,8 +1023,8 @@ code {
   }
   #open-modal .modalClose {
     position: absolute;
-    top: -30px;
-    right: 320px;
+    top: 15px;
+    right: 100px;
     margin: 6px;
     cursor: pointer;
     color: #68707d;
@@ -1053,7 +1054,7 @@ code {
     display: none;
     z-index: 2;
     font-size: 0.8rem;
-    width: 300px;
+    width: 280px;
     position: absolute;
     top: 53px;
     left: -248px;
@@ -1064,7 +1065,7 @@ code {
   }
   .rightNavDropdown .rightNavDropdownContent .rightNavDropdownBar {
     background-color: #b6bcc8;
-    width: 300px;
+    width: 280px;
     height: 2px;
     margin-bottom: 20px;
   }
