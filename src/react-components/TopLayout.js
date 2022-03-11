@@ -1,11 +1,13 @@
-import Logo from "./Logo.js"
-import RightNavIcons from "./RightNavIcons.js"
-import NavMenu from "./NavMenu.js"
+import Logo from "./Logo"
+import RightNavIcons from "./RightNavIcons"
+import NavMenu from "./NavMenu"
+import MobileMenu from "./Icons/MobileMenu"
 
 const TopLayout = () => {
   return (
     <nav className="topLayout">
         <div className="leftNavIcons">
+            <MobileMenu />
             <Logo />
             <NavMenu />
         </div>
