@@ -656,8 +656,8 @@
   #open-modal {
     .modalClose {
       position: absolute;
-      top: -30px;
-      right: 320px;
+      top: -10px;
+      right: 310px;
       margin: 6px;
       cursor: pointer;
       color: $DarkGrayishBlue;
@@ -689,7 +689,7 @@
       display: none;
       z-index: 2;
       font-size: 0.8rem;
-      width: 300px;
+      width: 280px;
       //height: 250px;
       position: absolute;
       top: 53px;
@@ -701,7 +701,7 @@
 
       & .rightNavDropdownBar {
         background-color: $GrayishBlue;
-        width: 300px;
+        width: 280px;
         height: 2px;
         margin-bottom: 20px;
       }

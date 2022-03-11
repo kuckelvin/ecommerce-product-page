@@ -1022,8 +1022,8 @@ code {
   }
   #open-modal .modalClose {
     position: absolute;
-    top: -30px;
-    right: 320px;
+    top: -10px;
+    right: 310px;
     margin: 6px;
     cursor: pointer;
     color: #68707d;
@@ -1053,7 +1053,7 @@ code {
     display: none;
     z-index: 2;
     font-size: 0.8rem;
-    width: 300px;
+    width: 280px;
     position: absolute;
     top: 53px;
     left: -248px;
@@ -1064,7 +1064,7 @@ code {
   }
   .rightNavDropdown .rightNavDropdownContent .rightNavDropdownBar {
     background-color: #b6bcc8;
-    width: 300px;
+    width: 280px;
     height: 2px;
     margin-bottom: 20px;
   }
